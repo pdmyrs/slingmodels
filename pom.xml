@@ -16,17 +16,11 @@
 --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
       
   <modelVersion>4.0.0</modelVersion>
-      
   <groupId>org.pdmyrs</groupId>
-      
   <artifactId>slingsmodels</artifactId>
-      
   <packaging>pom</packaging>
-      
   <version>1.0.0-SNAPSHOT</version>
-      
   <name>SlingModels</name>
-      
   <description>SlingModels</description>
       
   <modules>
@@ -39,81 +33,46 @@
   </modules>
       
   <properties>
-            
     <aem.host>localhost</aem.host>
-            
     <aem.port>4502</aem.port>
-            
     <aem.publish.host>localhost</aem.publish.host>
-            
     <aem.publish.port>4503</aem.publish.port>
-            
     <sling.user>admin</sling.user>
-            
     <sling.password>admin</sling.password>
-            
     <vault.user>admin</vault.user>
-            
     <vault.password>admin</vault.password>
-            
     <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
-            
-    <core.wcm.components.version>2.19.0</core.wcm.components.version>
-            
+    <core.wcm.components.version>2.20.2</core.wcm.components.version>
     <bnd.version>5.1.2</bnd.version>
-            
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-            
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>    
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>     
     <componentGroupName>SlingModels</componentGroupName>
-        
   </properties>
       
   <build>
-            
-    <plugins>
-                  
-      <!-- Maven Release Plugin -->
-                  
+    <plugins>        
+      <!-- Maven Release Plugin -->          
       <plugin>
-                        
         <groupId>org.apache.maven.plugins</groupId>
-                        
         <artifactId>maven-release-plugin</artifactId>
-                        
         <version>2.5.3</version>
-                        
         <configuration>
-                              
           <scmCommentPrefix>[maven-scm] :</scmCommentPrefix>
-                              
           <preparationGoals>clean install</preparationGoals>
-                              
           <goals>install</goals>
-                              
           <releaseProfiles>release</releaseProfiles>
-                          
         </configuration>
-                    
       </plugin>
                   
       <!-- Maven Source Plugin -->
-                  
       <plugin>
-                        
         <groupId>org.apache.maven.plugins</groupId>
-                        
         <artifactId>maven-source-plugin</artifactId>
-                        
         <version>3.0.1</version>
-                        
         <inherited>true</inherited>
-                    
       </plugin>
                   
       <!-- Maven Enforcer Plugin -->
-                  
       <plugin>
                         
         <groupId>org.apache.maven.plugins</groupId>
@@ -1219,25 +1178,17 @@ Bundle-DocURL:
       <dependency>
                         
         <groupId>com.adobe.aem</groupId>
-                        
         <artifactId>uber-jar</artifactId>
-                        
         <version>6.5.13</version>
-                        
         <scope>provided</scope>
-                    
       </dependency>
                   
       <!-- Apache Sling Dependencies -->
                   
       <dependency>
-                        
-        <groupId>org.apache.sling</groupId>
-                        
-        <artifactId>org.apache.sling.models.api</artifactId>
-                        
-        <version>1.3.6</version>
-                        
+        <groupId>org.apache.sling</groupId>             
+        <artifactId>org.apache.sling.models.api</artifactId>            
+        <version>1.3.6</version>         
         <scope>provided</scope>
                     
       </dependency>
