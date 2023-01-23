@@ -1,0 +1,6 @@
+{
+  "mobile.resourceTypes": [
+    "slingsmodels/components/page"
+  ],
+  "README": "Indicate which page resource types should display the mobile emulators."
+}

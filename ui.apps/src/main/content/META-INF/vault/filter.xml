@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/slingsmodels/clientlibs"/>
+    <filter root="/apps/slingsmodels/components"/>
+    <filter root="/apps/slingsmodels/i18n"/>
+    <filter root="/apps/msm/slingsmodels_blueprint" mode="merge"/>
+</workspaceFilter>
