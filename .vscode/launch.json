@@ -9,7 +9,7 @@
             "name": "Attach to Remote Program",
             "request": "attach",
             "hostName": "localhost",
-            "port": "8115"
+            "port": "9111"
         }
     ]
 }
